@@ -84,7 +84,7 @@ namespace Confuser.Protections {
 							name.SetCanRename(attr, false);
 							break;
 						default:
-							throw new UnreachableException();
+							throw new Confuser.Core.UnreachableException();
 					}
 
 					IEnumerable<IDnlibDef> members = InjectHelper.Inject(rtType, module.GlobalType, module);

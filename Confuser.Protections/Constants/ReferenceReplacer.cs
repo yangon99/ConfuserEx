@@ -103,7 +103,7 @@ namespace Confuser.Protections.Constants {
 					case 3:
 						return D - target;
 				}
-				throw new UnreachableException();
+				throw new Confuser.Core.UnreachableException();
 			}
 
 			public uint Get(int id) {
@@ -117,7 +117,7 @@ namespace Confuser.Protections.Constants {
 					case 3:
 						return D;
 				}
-				throw new UnreachableException();
+				throw new Confuser.Core.UnreachableException();
 			}
 
 			public static byte EncodeFlag(bool exp, int updateId, int getId) {

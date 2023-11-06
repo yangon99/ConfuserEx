@@ -376,7 +376,7 @@ namespace Confuser.Renamer {
 				}
 				throw new NotSupportedException("Unexpected type: " + type);
 			}
-			throw new UnreachableException();
+			throw new Confuser.Core.UnreachableException();
 		}
 
 		static VTableSlot ResolveSlot(TypeDef openType, VTableSlot slot, IList<TypeSig> genArgs) {

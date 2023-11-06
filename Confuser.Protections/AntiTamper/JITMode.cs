@@ -65,7 +65,7 @@ namespace Confuser.Protections.AntiTamper {
 					deriver = new DynamicDeriver();
 					break;
 				default:
-					throw new UnreachableException();
+					throw new Confuser.Core.UnreachableException();
 			}
 			deriver.Init(context, random);
 

@@ -319,7 +319,7 @@ namespace Confuser.Renamer.BAML {
 			else if (attr is EventDef)
 				retType = ((EventDef)attr).EventType;
 			return (retType == null) ? null : retType.ResolveTypeDefThrow();
-			throw new UnreachableException();
+			throw new Confuser.Core.UnreachableException();
 		}
 
 		void ProcessElementBody(BamlElement root, BamlElement elem) {

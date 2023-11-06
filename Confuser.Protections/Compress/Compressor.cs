@@ -218,7 +218,7 @@ namespace Confuser.Protections {
 				compCtx.Deriver = new DynamicDeriver();
 				break;
 			default:
-				throw new UnreachableException();
+				throw new Confuser.Core.UnreachableException();
 			}
 			compCtx.Deriver.Init(context, random);
 

@@ -156,7 +156,7 @@ namespace Confuser.Core {
 				typeDef = typeDef.DeclaringType;
 			} while (typeDef != null);
 
-			throw new UnreachableException();
+			throw new Confuser.Core.UnreachableException();
 		}
 
 		/// <summary>
@@ -258,7 +258,7 @@ namespace Confuser.Core {
 
 				type = type.BaseType.ResolveTypeDefThrow();
 			} while (type != null);
-			throw new UnreachableException();
+			throw new Confuser.Core.UnreachableException();
 		}
 
 		/// <summary>

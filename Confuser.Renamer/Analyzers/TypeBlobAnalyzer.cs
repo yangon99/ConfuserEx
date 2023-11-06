@@ -91,7 +91,7 @@ namespace Confuser.Renamer.Analyzers {
 			if (arg.IsProperty)
 				return FindArgumentMemberDef(arg.Name, new PropertySig(true, arg.Type), attrType);
 
-			throw new UnreachableException();
+			throw new Confuser.Core.UnreachableException();
 		}
 
 		private static IMemberDef FindArgumentMemberDef(UTF8String name, FieldSig fieldSig, TypeDef attrType) {
@@ -167,7 +167,7 @@ namespace Confuser.Renamer.Analyzers {
 				IMemberDef member;
 				if (memberRef.IsFieldRef) member = memberRef.ResolveFieldThrow();
 				else if (memberRef.IsMethodRef) member = memberRef.ResolveMethodThrow();
-				else throw new UnreachableException();
+				else throw new Confuser.Core.UnreachableException();
 
 				service.AddReference(member, new MemberRefReference(memberRef, member));
 			}
